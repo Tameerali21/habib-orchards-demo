@@ -17,4 +17,10 @@ residential plots + payment plans. Assistant: **Noor**. Built 2026-11-09 by Tame
   (`nmc_habib_leads`).
 - Sent-bubble emoji fix included: chip labels are entity-decoded before display, so
   "🌙 After-hours demo" no longer renders as raw `&#127769;` text.
-- Harness: `~/workspace/outreach/demo-deploy-zips/habib-verify-2026-11-09.js`.
+- Harness: `~/workspace/outreach/demo-deploy-zips/habib-verify-2026-11-09.js` — **57/57 PASS**
+  locally (file://, interactive: all flows, seeds, entity fix, XSS, mobile, zero errors).
+- **Live:** https://habib-orchards-demo.vercel.app (Vercel project `habib-orchards-demo`,
+  GitHub-linked to this repo). Live-served `/`, `assets/widget.js`, `assets/style.css` and
+  `og-preview.jpg` verified **md5-identical** to the harness-verified local build
+  2026-11-09 (direct interactive live browsing from the build VM is proxy-blocked;
+  byte-identity is the fleet's static-live verification standard).
